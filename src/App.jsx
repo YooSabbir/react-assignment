@@ -1,9 +1,11 @@
-import './App.css'
-import Navbar from './componants/Navbar'
-import Hero from './componants/Hero'
+import './App.css';
+import Navbar from './componants/Navbar';
+import Hero from './componants/Hero';
 import Rating from './componants/Rating';
-import Step from './componants/Step'
+import Step from './componants/Step';
 import Pricing from './componants/Pricing';
+import Footer from './componants/Footer'
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
       <Rating />
       <Step />
       <Pricing />
+      <Footer />
     </>
   );
 }
