@@ -1,19 +1,20 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-[#101727] text-white p-10 justify-around">
-        <aside>
-          <div className="text-[29px] font-bold text-blue-600  cursor-pointer items-center flex">
+      <footer className="footer bg-[#101727] text-white p-8 grid grid-cols-2 gap-6 sm:flex sm:footer-horizontal sm:justify-around">
+        <aside className="col-span-2 sm:col-span-1">
+          <div className="text-[26px] sm:text-[29px] font-bold text-blue-600 cursor-pointer flex items-center">
             DigiTools
           </div>
-          <p>
+          <p className="text-sm mt-2">
             Premium digital tools for creators,
-            <br /> professionals, and businesses. Work smarter <br /> with our
-            suite of powerful tools.
+            <br /> professionals, and businesses. Work smarter <br />
+            with our suite of powerful tools.
           </p>
         </aside>
+
         <nav>
           <h6 className="footer-title">Product</h6>
           <a className="link link-hover">Features</a>
@@ -21,6 +22,7 @@ function Footer() {
           <a className="link link-hover">Templates</a>
           <a className="link link-hover">Integrations</a>
         </nav>
+
         <nav>
           <h6 className="footer-title">Company</h6>
           <a className="link link-hover">About</a>
@@ -28,6 +30,7 @@ function Footer() {
           <a className="link link-hover">Careers</a>
           <a className="link link-hover">Press</a>
         </nav>
+
         <nav>
           <h6 className="footer-title">Resources</h6>
           <a className="link link-hover">Documentation</a>
@@ -35,6 +38,7 @@ function Footer() {
           <a className="link link-hover">Community</a>
           <a className="link link-hover">Contact</a>
         </nav>
+
         <nav>
           <h6 className="footer-title">Social</h6>
           <div className="grid grid-flow-col gap-4">
@@ -74,13 +78,19 @@ function Footer() {
           </div>
         </nav>
       </footer>
-      <footer className="footer sm:footer-horizontal bg-[#101727] text-white items-center py-3 justify-around">
-        <nav className="grid-flow-col items-center">
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        </nav>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+
+      <footer
+        className="footer bg-[#101727] text-white py-4 px-6
+  flex flex-col items-center text-center gap-3
+  lg:flex-row lg:justify-around lg:text-left"
+      >
+        <p className="text-sm">
+          Copyright © {new Date().getFullYear()} Digitools - All right reserved
+        </p>
+
+        <nav className="flex gap-4 text-sm">
           <a>Privacy Policy</a>
-          <a> Terms of Service</a>
+          <a>Terms of Service</a>
           <a>Cookies</a>
         </nav>
       </footer>
@@ -88,4 +98,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
