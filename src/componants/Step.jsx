@@ -5,7 +5,7 @@ import rocket from "../assets/rocket.png";
 
 function step() {
   return (
-    <div className="min-h-[400px] bg-[#F9FAFC] px-4 sm:px-8 lg:px-49 py-17">
+    <div className="min-h-[400px] bg-[#F9FAFC] w-full lg:px-35 py-17">
       <div className="text-center space-y-2">
         <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-tight">
           Get Started in 3 Steps
@@ -16,7 +16,7 @@ function step() {
       </div>
 
       <div className="flex flex-col items-center pt-6 lg:grid lg:grid-cols-3 lg:pt-10 space-y-4 lg:space-y-0">
-        <div className="relative bg-white text-center w-full max-w-[280px] min-h-[300px] flex flex-col justify-center items-center p-5 rounded-lg shadow-sm hover:shadow-md transition">
+        <div className="relative bg-white text-center w-full max-w-[320px] min-h-[320px] flex flex-col justify-center items-center p-5 rounded-lg shadow-sm hover:shadow-md transition">
           <div className="absolute top-3 right-3 w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-[11px]">
             01
           </div>
@@ -33,7 +33,7 @@ function step() {
           </div>
         </div>
 
-        <div className="relative bg-white text-center w-full max-w-[280px] min-h-[300px] flex flex-col justify-center items-center p-5 rounded-lg shadow-sm hover:shadow-md transition">
+        <div className="relative bg-white text-center w-full max-w-[320px] min-h-[320px] flex flex-col justify-center items-center p-5 rounded-lg shadow-sm hover:shadow-md transition">
           <div className="absolute top-3 right-3 w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-[11px]">
             02
           </div>
@@ -48,7 +48,7 @@ function step() {
           </div>
         </div>
 
-        <div className="relative bg-white text-center w-full max-w-[280px] min-h-[300px] flex flex-col justify-center items-center p-5 rounded-lg shadow-sm hover:shadow-md transition">
+        <div className="relative bg-white text-center w-full max-w-[320px] min-h-[320px] flex flex-col justify-center items-center p-5 rounded-lg shadow-sm hover:shadow-md transition">
           <div className="absolute top-3 right-3 w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-[11px]">
             03
           </div>
