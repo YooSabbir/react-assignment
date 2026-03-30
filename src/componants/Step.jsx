@@ -5,7 +5,7 @@ import rocket from "../assets/rocket.png";
 
 function step() {
   return (
-    <div className="min-h-[400px] bg-[#F9FAFC] w-full lg:px-35 py-17">
+    <div className="min-h-[400px] bg-[#F9FAFC] w-full lg:px-35 py-13">
       <div className="text-center space-y-2">
         <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-tight">
           Get Started in 3 Steps

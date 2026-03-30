@@ -3,9 +3,7 @@ import check from "../assets/check.png";
 
 function Pricing() {
   return (
-
     <div className="w-full min-h-screen px-3 sm:px-4 lg:px-8">
-
       <div className="text-center space-y-2 pt-10 sm:pt-12">
         <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-tight">
           Simple, Transparent Pricing
@@ -15,7 +13,7 @@ function Pricing() {
         </p>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center lg:px-25">
+      <div className="mt-8 mb-8 pb-3 grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center lg:px-25 lg:pb-12">
         <div className="bg-[#F2F2F2] w-full max-w-[95%] sm:max-w-[320px] min-h-[420px] p-5 sm:p-6 flex flex-col justify-between rounded-xl shadow-sm hover:shadow-md transition">
           <div className="space-y-4">
             <div>
