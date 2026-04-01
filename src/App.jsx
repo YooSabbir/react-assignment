@@ -6,6 +6,9 @@ import Step from "./componants/Step";
 import Pricing from "./componants/Pricing";
 import Footer from "./componants/Footer";
 import Mainsection from "./componants/Mainsection";
+import Cart from "./componants/Cart";
+import Tab from "./componants/Tabs"
+import { useState } from "react";
 
 const getData = async () => {
   const res = await fetch("/data.json");
@@ -15,12 +18,25 @@ const getData = async () => {
 const resPromise = getData();
 
 function App() {
+  const [activeTab, setActiveTab] = useState("products");
+  const [carts, setCarts] = useState([])
+
   return (
     <>
       <Navbar />
       <Hero />
       <Rating />
-      <Mainsection resPromise={resPromise} />
+      <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
+
+      {activeTab === "products" && (
+        <Mainsection
+          resPromise={resPromise}
+          carts={carts}
+          setCarts={setCarts}
+        />
+      )}
+      {activeTab === "cart" && <Cart carts={carts} />}
+
       <Step />
       <Pricing />
       <Footer />
