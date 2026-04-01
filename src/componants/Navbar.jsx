@@ -1,9 +1,8 @@
 import React from "react";
 import cartImg from "../assets/cart.png";
 
-const Navbar = () => {
+const Navbar = ({ carts }) => {
 
-  const cartCount = 1;
 
   return (
     <div className="bg-base-100 shadow-sm">
@@ -24,12 +23,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex items-center gap-4 relative">
-
             <div className="relative">
               <img src={cartImg} alt="cart" className="w-6 h-6" />
 
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
-                {cartCount}
+                {carts.length}
               </span>
             </div>
             <button className="cursor-pointer">login</button>
