@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import check from "../assets/check.png";
+import { toast } from "react-toastify";
 
 const Card = ({ data, carts, setCarts }) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const handleBuyNow = () => {
     setIsSubscribed(true);
     setCarts([...carts,data])
+    toast.success("Item added to cart!")
   };
 
   return (
