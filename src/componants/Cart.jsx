@@ -1,8 +1,16 @@
 import React from "react";
 
-const Cart = ({ carts }) => {
-
+const Cart = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((acc, item) => acc + item.price, 0);
+
+  const handlePayment = () => {
+    setCarts([]);
+  };
+
+  const handleDelete = (index) => {
+    const filteredArray = carts.filter((_, i) => i !== index);
+    setCarts(filteredArray);
+  };
 
   return (
     <div className="max-w-4xl mx-auto p-6">
@@ -12,12 +20,11 @@ const Cart = ({ carts }) => {
         <p className="text-gray-500 text-center">Your cart is empty.</p>
       ) : (
         <div className="flex flex-col gap-6">
-          {carts.map((item) => (
+          {carts.map((item, index) => (
             <div
-              key={item.id}
+              key={index}
               className="flex items-center gap-4 bg-white shadow-md rounded-xl p-4"
             >
-
               <div className="w-15 h-15 flex-shrink-0 rounded-lg overflow-hidden border border-gray-200">
                 <img
                   src={item.image}
@@ -33,7 +40,10 @@ const Cart = ({ carts }) => {
                 <p className="text-gray-500 mt-1">${item.price.toFixed(2)}</p>
               </div>
 
-              <button className="text-red-500 font-medium hover:text-red-600 transition-colors">
+              <button
+                onClick={() => handleDelete(index)}
+                className="text-red-500 font-medium hover:text-red-600 transition-colors"
+              >
                 Remove
               </button>
             </div>
@@ -46,7 +56,10 @@ const Cart = ({ carts }) => {
                 ${totalPrice.toFixed(2)}
               </span>
             </div>
-            <button className="w-full sm:w-auto py-3 px-6 bg-gradient-to-r from-violet-600 to-purple-500 text-white rounded-full text-sm font-semibold hover:scale-105 transform transition">
+            <button
+              onClick={handlePayment}
+              className="w-full sm:w-auto py-3 px-6 bg-gradient-to-r from-violet-600 to-purple-500 text-white rounded-full text-sm font-semibold hover:scale-105 transform transition"
+            >
               Proceed To Checkout
             </button>
           </div>

@@ -1,12 +1,15 @@
-import React from 'react'
-import cartImg from '../assets/cart.png'
+import React from "react";
+import cartImg from "../assets/cart.png";
 
 const Navbar = () => {
+
+  const cartCount = 1;
+
   return (
     <div className="bg-base-100 shadow-sm">
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
-          <div className="text-[29px] font-bold text-blue-600  cursor-pointer items-center flex">
+          <div className="text-[29px] font-bold text-blue-600 cursor-pointer items-center flex">
             DigiTools
           </div>
         </div>
@@ -20,9 +23,14 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end">
-          <div className="flex items-center gap-4">
-            <div>
-              <img src={cartImg} alt="" />
+          <div className="flex items-center gap-4 relative">
+
+            <div className="relative">
+              <img src={cartImg} alt="cart" className="w-6 h-6" />
+
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+                {cartCount}
+              </span>
             </div>
             <button className="cursor-pointer">login</button>
             <button className="btn btn-primary rounded-4xl">Get Started</button>
@@ -31,6 +39,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
