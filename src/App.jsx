@@ -26,7 +26,7 @@ function App() {
       <Navbar carts={carts} />
       <Hero />
       <Rating />
-      <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Tab activeTab={activeTab} setActiveTab={setActiveTab} carts={carts} />
 
       {activeTab === "products" && (
         <Mainsection

@@ -1,7 +1,7 @@
 import React from "react";
 import Cart from "./Cart";
 
-const Tabs = ({ activeTab, setActiveTab }) => {
+const Tabs = ({ activeTab, setActiveTab, carts }) => {
   return (
     <div className="bg-white py-10">
       <div className="text-center space-y-3">
@@ -30,7 +30,7 @@ const Tabs = ({ activeTab, setActiveTab }) => {
             type="radio"
             name="my_tabs_1"
             className="tab rounded-full px-6 text-gray-600 checked:bg-[#4f39f6] checked:text-white"
-            aria-label={`Cart (${Cart.length})`}
+            aria-label={`Cart (${carts.length})`}
             checked={activeTab === "cart"}
             onChange={() => setActiveTab("cart")}
           />
