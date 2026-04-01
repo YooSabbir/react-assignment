@@ -1,16 +1,63 @@
-# React + Vite
+# DigiTools Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and powerful collection of online utility tools designed to help users complete common digital tasks quickly and easily, straight from the browser.
 
-Currently, two official plugins are available:
+> Explore live: https://digitoolsapp.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DigiTools Web App is a free online utility toolkit that offers practical tools without the need for installation, login, or subscription. From text utilities to conversions, everything works instantly in the browser.
 
-## Expanding the ESLint configuration
+Whether you're a developer, student, or everyday user, DigiTools provides helpful web utilities all in one place.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Built With
+
+This project was created using modern web technologies:
+
+- **HTML** – Markup for structuring the interface
+- **CSS** – Styling and responsive layout
+- **JavaScript** – Interactive and dynamic functionality
+- **Netlify** – Hosting and deployment platform
+
+---
+
+## Features
+
+Here are three key features of this project:
+
+1. **Multiple Useful Tools in One Place**
+   Includes converters, text utilities, timers, calculators, and more, all accessible instantly.
+
+2. **No Signup or Login Required**
+   Use any tool without needing to create an account or provide personal information.
+
+3. **Responsive and Fast Performance**
+   Works across devices and loads quickly due to a lightweight design and client-side execution.
+
+---
+
+## Tools Included (Examples)
+
+While the full list may expand over time, common tools include:
+
+- Unit Converters (Length, Weight, Temperature, etc.)
+- Text Utilities (Word Counter, Lorem Ipsum Generator)
+- Time and Productivity Tools (Pomodoro, Stopwatch)
+- Security Tools (Password Generator, QR Code Generator)
+- Math and Finance Utilities (BMI, Mortgage Calculator)
+
+*(Feel free to customize this section with the actual tools included on your site if you want it more specific!)*
+
+---
+
+## Getting Started
+
+If you’d like to run this project locally:
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/<your‑username>/<your‑repo>.git
